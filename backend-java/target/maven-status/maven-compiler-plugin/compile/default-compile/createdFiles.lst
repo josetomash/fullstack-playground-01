@@ -1,0 +1,10 @@
+com/tuapp/repository/UserRepository.class
+com/tuapp/model/AuthProvider.class
+com/tuapp/controller/AuthController.class
+com/tuapp/MiAppApplication.class
+com/tuapp/exception/GlobalExceptionHandler.class
+com/tuapp/config/SecurityConfig.class
+com/tuapp/dto/RegisterRequest.class
+com/tuapp/dto/LoginRequest.class
+com/tuapp/model/User.class
+com/tuapp/service/AuthService.class

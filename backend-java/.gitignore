@@ -1,0 +1,6 @@
+
+# Base de datos local H2
+data/
+*.mv.db
+*.lock.db
+*.trace.db
