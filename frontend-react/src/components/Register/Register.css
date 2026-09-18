@@ -1,0 +1,118 @@
+/* src/components/Register/Register.css */
+
+.register-card {
+  background-color: var(--bg, #ffffff);
+  padding: 40px 35px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 380px;
+  box-sizing: border-box;
+}
+
+.register-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: var(--text-h, #1a202c);
+  margin: 0 0 12px 0;
+}
+
+.register-subtitle {
+  color: var(--text);
+  margin-bottom: 25px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.register-divider {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0 12px;
+  color: var(--text, #64748b);
+  font-size: 0.8rem;
+}
+
+.register-divider::before,
+.register-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: #e2e8f0;
+}
+
+.register-divider span {
+  padding: 0 12px;
+}
+
+.register-text-link {
+  color: var(--text, #64748b);
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.register-text-link:hover {
+  text-decoration: underline;
+}
+
+/* Botón para revelar el formulario de correo */
+.register-email-toggle {
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  background-color: transparent;
+  color: var(--text-h, #1a202c);
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.05s ease;
+}
+
+.register-email-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+  border-color: #9ca3af;
+}
+
+.register-email-toggle:active {
+  transform: translateY(1px);
+}
+
+.register-email-toggle:focus-visible {
+  outline: 2px solid #4285f4;
+  outline-offset: 2px;
+}
+
+/* ═══════════════════════════════════════════════
+   Modo oscuro — todos los overrides agrupados
+   ═══════════════════════════════════════════════ */
+@media (prefers-color-scheme: dark) {
+  .register-card {
+    background-color: #1e293b;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  }
+
+  .register-title {
+    color: #f8fafc;
+  }
+
+  .register-divider::before,
+  .register-divider::after {
+    background-color: #334155;
+  }
+
+  .register-email-toggle {
+    border-color: #334155;
+    color: #f8fafc;
+  }
+
+  .register-email-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.04);
+    border-color: #475569;
+  }
+}
