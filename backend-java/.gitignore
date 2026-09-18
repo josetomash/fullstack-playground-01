@@ -4,3 +4,6 @@ data/
 *.mv.db
 *.lock.db
 *.trace.db
+
+# Maven build output
+target/
